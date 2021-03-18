@@ -9,6 +9,11 @@ class PostController extends Controller
 {
     //
 
+    public function __construct(){
+
+        $this->middleware(['auth'])->only(['store', 'destroy']); //set middleware but only for store & destroy method
+    }
+
     public function index(){
 
         //$posts = Post::get(); //return all post in natural db order //laravel collection
