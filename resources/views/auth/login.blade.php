@@ -3,7 +3,7 @@
 @section('content')
     <div class="flex justify-center">
         <div class="w-4/12 bg-white p-6 rounded">
-            Login
+            Login Into Your Account
             <br><br>
 
             @if (session('status'))
